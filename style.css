@@ -2,6 +2,7 @@ html{
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
     background-color: #0D0E22;
+    color: #2b2d30;
 }
 
 .header{
@@ -61,7 +62,6 @@ body{
 .home-left{
     z-index: 2;
     width: 40%;
-    border: black;
     margin-top: 300px;
     margin-left: 10%;
     font-size: 45px;
@@ -70,7 +70,8 @@ body{
 .home-line{
     float: left;
     width: 350px;
-    border: 3px solid black;
+    border: 3px solid #2b2d30;
+    ;
 }
 
 .cloud1{
@@ -108,7 +109,7 @@ body{
 }
 
 
-.type-cursor { color:black; animation:blink .6s ease infinite;opacity:0; }
+.type-cursor { color:#2b2d30; animation:blink .6s ease infinite;opacity:0; }
 @keyframes blink {
     100% { opacity:1; }
 }
@@ -126,7 +127,6 @@ body{
     text-align: center;
     margin-left: 35%;
     width: 30%;
-    color: #2b2d30;
 }
 
 .section-text{
@@ -134,5 +134,4 @@ body{
     font-size: 35px;
     width: 60%;
     margin-left: 20%;
-    color: #2b2d30;
 }
