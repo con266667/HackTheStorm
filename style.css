@@ -126,6 +126,7 @@ body{
     text-align: center;
     margin-left: 35%;
     width: 30%;
+    color: #2b2d30;
 }
 
 .section-text{
@@ -133,4 +134,5 @@ body{
     font-size: 35px;
     width: 60%;
     margin-left: 20%;
+    color: #2b2d30;
 }
