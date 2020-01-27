@@ -34,6 +34,8 @@ var aboutUs = document.getElementById("AboutUs");
 var faq = document.getElementById("FAQ");
 var sponsors = document.getElementById("Sponsors");
 var contact = document.getElementById("Contact");
+var hackthestorm = document.getElementById("HackTheStorm");
+
 
 aboutUs.onclick = function(){
     scrollToElement(document.getElementById("AboutUsSection"));
@@ -51,6 +53,10 @@ contact.onclick = function(){
     scrollToElement(document.getElementById("ContactSection"));
 }
 
+hackthestorm.onclick = function(){
+    scrollToElement(document.getElementById("Home"));
+}
+
 function scrollToElement(pageElement) {    
     var positionX = 0,         
         positionY = 0;    
@@ -59,6 +65,6 @@ function scrollToElement(pageElement) {
         positionX += pageElement.offsetLeft;        
         positionY += pageElement.offsetTop;        
         pageElement = pageElement.offsetParent;        
-        window.scrollTo(positionX, positionY);    
+        window.scrollTo(positionX, positionY-200);    
     }
 }
