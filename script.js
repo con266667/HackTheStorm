@@ -29,3 +29,8 @@ function erase() {
       setTimeout(typeWriter, speed);
     }
 }
+
+var aboutUs = document.getElementById("AboutUs");
+var faq = document.getElementById("FAQ");
+var sponsors = document.getElementById("Sponsors");
+var contact = document.getElementById("Contact");
