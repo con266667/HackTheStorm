@@ -151,6 +151,7 @@ body{
 }
 
 .dropdown-panel{
+    font-size: 25px;
     margin-top: -18px;
     display: none;
     width: 30%;
