@@ -144,14 +144,15 @@ body{
 }
 
 .dropdown{
-    width: 20%;
-    height: 5%;
-    margin-left: 40%;
-    margin-bottom: 10px;
+    width: 30%;
+    height: 8%;
+    margin-left: 35%;
+    margin-bottom: 20px;
 }
 
 .dropdown-panel{
+    margin-top: -18px;
     display: none;
-    width: 20%;
-    margin-left: 40%;
+    width: 30%;
+    margin-left: 35%;
 }
