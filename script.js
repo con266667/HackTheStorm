@@ -72,3 +72,16 @@ function scrollToElement(pageElement) {
         window.scrollTo(positionX, positionY-200);    
     }
 }
+
+var faqbutton = document.getElementsByClassName("dropdown");
+
+for(var i = 0; i < faqbutton.length; i++){
+    faqbutton[i].addEventListener("click", function(){
+        var panel = this.nextElementSibling;
+        if(panel.style.display == "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}

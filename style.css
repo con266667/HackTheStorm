@@ -142,3 +142,16 @@ body{
     width: 60%;
     margin-left: 20%;
 }
+
+.dropdown{
+    width: 20%;
+    height: 5%;
+    margin-left: 40%;
+    margin-bottom: 10px;
+}
+
+.dropdown-panel{
+    display: none;
+    width: 20%;
+    margin-left: 40%;
+}
