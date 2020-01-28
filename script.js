@@ -100,16 +100,7 @@ function scrollToElement(pageElement) {
 
         console.log(window.scrollY);
     } else {
-
-        var positionX = 0,         
-            positionY = 0;    
-
-        while(pageElement != null){        
-            positionX += pageElement.offsetLeft;        
-            positionY += pageElement.offsetTop;        
-            pageElement = pageElement.offsetParent;        
-            window.scrollTo(positionX, positionY-200);    
-        }
+        window.scrollTo(pageElement);
     }
 }
 
