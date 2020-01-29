@@ -176,7 +176,13 @@ if(hasExpanded){
     console.log(email.value);
     mailList.style.opacity = "0";
     } else {
-        alert("Invalid Email");
+        //alert("Invalid Email");
+        email.style.borderColor = "red";
+        email.classList.add("wiggle");
+        setTimeout(function(){
+            email.classList.remove("wiggle");
+        }, 500);
+        
     }
 } else {
         hasExpanded = true;

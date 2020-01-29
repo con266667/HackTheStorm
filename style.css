@@ -87,6 +87,19 @@ body{
     border-radius: 10px;
 }
 
+.wiggle{
+    animation-name: wiggle;
+    animation-duration: 0.5s;
+}
+
+@keyframes wiggle {
+    0% {-webkit-transform:rotate(1deg);}
+    25% {-webkit-transform:rotate(-1deg);}
+    50% {-webkit-transform:rotate(1deg);}
+    75% {-webkit-transform:rotate(-1deg);}
+    100% {-webkit-transform:rotate(1deg);}
+}
+
 .get-notified{
     position: relative;
     bottom: 3px;
