@@ -74,6 +74,7 @@ body{
 }
 
 .email{
+    padding-left: 10px;
     position: relative;
     display: inline-block;
     opacity: 0;
@@ -96,8 +97,21 @@ body{
     background-color: gray;
     border: 3px solid black;
     border-radius: 13px;
+    transition: background-color 0.5s;
     transition: width 1s;
 }
+
+.get-notified:hover{
+    background-color: black;
+    color: white;
+    animation-name: bggraytoblack;
+    animation-duration: 0.5s;
+}
+
+@keyframes bggraytoblack {
+    from {background-color: gray;}
+    to {background-color: black;}
+  }
 
 .home-line{
     float: left;
@@ -167,10 +181,20 @@ body{
 }
 
 .dropdown{
+    font-size: 25;
+    border: 3px solid black;
+    border-radius: 13px;
     width: 30%;
     height: 8%;
     margin-left: 35%;
     margin-bottom: 20px;
+}
+
+.dropdown:hover{
+    background-color: black;
+    color: white;
+    animation-name: bggraytoblack;
+    animation-duration: 0.5s;
 }
 
 .dropdown-panel{
