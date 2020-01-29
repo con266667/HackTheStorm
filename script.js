@@ -188,9 +188,8 @@ if(hasExpanded){
         hasExpanded = true;
         mailList.style.marginLeft = "0";
         email.style.opacity = "1";
-        getnotified.style.width = "20%";
-        email.style.width = "49%";
-        email.style.marginRight = "1%";
+        getnotified.style.width = "30%";
+        email.style.width = "39%";
     }
 }
 
