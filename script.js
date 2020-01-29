@@ -105,7 +105,9 @@ function scrollToElement(pageElement, speed) {
                     if(i < pageElement.offsetTop-200){
                         loop();
                     } else {
-                        document.getElementsByTagName("body")[0].style.scrollSnapType = "y mandatory";
+                        if(detectmob() != true){
+                            document.getElementsByTagName("body")[0].style.scrollSnapType = "y mandatory";
+                        }
                         window.scroll(0, pageElement.offsetTop-200);
                         isAutoScrolling = false;
                     }
@@ -115,7 +117,9 @@ function scrollToElement(pageElement, speed) {
                     if(i > pageElement.offsetTop-200){
                         loop();
                     } else {
-                        document.getElementsByTagName("body")[0].style.scrollSnapType = "y mandatory";
+                        if(detectmob() != true){
+                            document.getElementsByTagName("body")[0].style.scrollSnapType = "y mandatory";
+                        }
                         window.scroll(0, pageElement.offsetTop-200);
                         isAutoScrolling = false;
                     }
