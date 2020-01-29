@@ -228,3 +228,13 @@ body{
     margin-left: 35%;
     transition: max-height 0.5s;
 }
+
+@media only screen and (max-width: 768px){
+    /* Tablets */
+    
+}
+
+@media only screen and (max-width: 600px){
+    /* Phones */
+    
+}
