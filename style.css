@@ -5,6 +5,10 @@ html{
     color: #2b2d30;
 }
 
+input:focus, textarea:focus, select:focus, button:focus{
+    outline: none;
+}
+
 .header{
     overflow: hidden;
     height: 100px;
@@ -106,7 +110,6 @@ body{
     margin-right: 28%;
     position: relative;
     bottom: 3px;
-    display: inline-block;
     width: 68%;
     height: 50px;
     font-weight: bold;
@@ -200,6 +203,8 @@ body{
     font-size: 25;
     border: 3px solid black;
     border-radius: 13px;
+    background-color: white;
+    color: black;
     width: 30%;
     height: 8%;
     margin-left: 35%;
