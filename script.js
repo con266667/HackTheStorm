@@ -1,3 +1,5 @@
+//TYPEWRITER
+
 var pos = 0;
 var turn = 0;
 var data = ['Gain Skills','Make Friends','Develop Your Ideas','Have Fun!'];
@@ -29,6 +31,8 @@ function erase() {
     }
 }
 
+//VARS
+
 var body = document.getElementsByTagName("body")[0];
 
 var aboutUs = document.getElementById("AboutUs");
@@ -37,6 +41,8 @@ var sponsors = document.getElementById("Sponsors");
 var contact = document.getElementById("Contact");
 var hackthestorm = document.getElementById("HackTheStorm");
 var logo = document.getElementById("Logo");
+
+//RESPONSIVE
 
 function detectmob() { 
  if( navigator.userAgent.match(/Android/i)
@@ -61,6 +67,8 @@ if(detectmob()){
     body.style.scrollSnapType = "y mandatory";
 }
 
+//HEADER BUTTONS
+
 aboutUs.onclick = function(){
     scrollToElement(document.getElementById("AboutUsSection"), 20);
 }
@@ -83,66 +91,6 @@ hackthestorm.onclick = function(){
 
 logo.onclick = function(){
     scrollToElement(logo, 20);
-}
-
-/*
-var isAutoScrolling;
-var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-if(isChrome){
-    var didScroll = false;
-
-    window.onwheel = function(){
-    }
-    setInterval(() => {
-        if(didScroll){
-            didScroll = false
-        }
-    }, 2000);
-
-
-    window.onwheel = function(){
-        window.lastScrollTime = new Date().getTime()
-        console.log(is_scrolling());
-    }
-
-    function is_scrolling() {
-        return window.lastScrollTime && new Date().getTime() < window.lastScrollTime + 100
-    }
-
-    setInterval(() => {
-        console.log(isAutoScrolling);
-        console.log(is_scrolling());
-        if(is_scrolling()){
-
-        } else {
-            if(isAutoScrolling != true){
-                var didScroll = true;
-                var snaps = [logo, document.getElementById("AboutUsSection"), document.getElementById("FAQSection"), document.getElementById("SponsorsSection")]
-                var snapvalues = [];
-                for(var i = 0; i < snaps.length; i++){
-                snapvalues[i] = snaps[i].offsetTop - 200;   
-                }
-                var closest = snapvalues.reduce(function(prev, curr) {
-                    return (Math.abs(curr - window.scrollY) < Math.abs(prev - window.scrollY) ? curr : prev);
-                });
-                scrollToElement(snaps[snapvalues.indexOf(closest)], 25);
-            }
-        }
-    }, 100);
-
-}
-*/
-
-function closest(){
-    var snaps = [logo, document.getElementById("AboutUsSection"), document.getElementById("FAQSection"), document.getElementById("SponsorsSection")]
-    var snapvalues = [];
-    for(var i = 0; i < snaps.length; i++){
-    snapvalues[i] = snaps[i].offsetTop - 200;   
-    }
-    var closest = snapvalues.reduce(function(prev, curr) {
-        return (Math.abs(curr - window.scrollY) < Math.abs(prev - window.scrollY) ? curr : prev);
-    });
-    return snaps[snapvalues.indexOf(closest)]
 }
 
 function scrollToElement(pageElement, speed) { 
@@ -179,20 +127,72 @@ function scrollToElement(pageElement, speed) {
         loop();
 }
 
+//GET CLOSEST SECTION(ABOUT, FAQ, SPONSORS)
+
+function closest(){
+    var snaps = [logo, document.getElementById("AboutUsSection"), document.getElementById("FAQSection"), document.getElementById("SponsorsSection")]
+    var snapvalues = [];
+    for(var i = 0; i < snaps.length; i++){
+    snapvalues[i] = snaps[i].offsetTop - 200;   
+    }
+    var closest = snapvalues.reduce(function(prev, curr) {
+        return (Math.abs(curr - window.scrollY) < Math.abs(prev - window.scrollY) ? curr : prev);
+    });
+    return snaps[snapvalues.indexOf(closest)]
+}
+
+//DROPDOWN FAQ
+
 var faqbutton = document.getElementsByClassName("dropdown");
 
 for(var i = 0; i < faqbutton.length; i++){
     faqbutton[i].addEventListener("click", function(){
+        this.classList.toggle("active");
         var panel = this.nextElementSibling;
         for(var i2 = 0; i2 < faqbutton.length; i2++){
             if(faqbutton[i2].nextElementSibling != panel) {
-                faqbutton[i2].nextElementSibling.style.display = "none";
+                faqbutton[i2].nextElementSibling.style.maxHeight = null;
             }
         }
-        if(panel.style.display == "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
         }
     });
+}
+
+//EMAIL
+
+var getnotified = document.getElementById("get-notified");
+var email = document.getElementById("email");
+var mailList = document.getElementById("mail-list");
+var hasExpanded = false;
+
+getnotified.onclick = function(){
+if(hasExpanded){
+    if(ValidateEmail(email.value)){
+    //signup
+    console.log(email.value);
+    mailList.style.opacity = "0";
+    } else {
+        alert("Invalid Email");
+    }
+} else {
+        hasExpanded = true;
+        mailList.style.marginLeft = "0";
+        email.style.opacity = "1";
+        getnotified.style.width = "20%";
+        email.style.width = "49%";
+        email.style.marginRight = "1%";
+    }
+}
+
+function ValidateEmail(mail) 
+{
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
+  {
+    return true
+  }
+    return false
 }

@@ -67,13 +67,36 @@ body{
     font-size: 45px;
 }
 
+.mail-list{
+    margin-left: -3%;
+    transition: margin-left 1s;
+    transition: opacity 0.7s;
+}
+
+.email{
+    position: relative;
+    display: inline-block;
+    opacity: 0;
+    width: 0%;
+    height: 50px;
+    transition: opacity 0.3s;
+    transition: width 1s;
+    font-size: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
 .get-notified{
-    width: 200px;
+    position: relative;
+    bottom: 3px;
+    display: inline-block;
+    width: 68%;
     height: 50px;
     font-weight: bold;
     background-color: gray;
     border: 3px solid black;
     border-radius: 13px;
+    transition: width 1s;
 }
 
 .home-line{
@@ -151,9 +174,12 @@ body{
 }
 
 .dropdown-panel{
+    overflow: hidden;
+    max-height: 0;
     font-size: 25px;
     margin-top: -18px;
-    display: none;
+    margin-bottom: 20px;
     width: 30%;
     margin-left: 35%;
+    transition: max-height 0.5s;
 }
