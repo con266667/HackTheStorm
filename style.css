@@ -35,6 +35,10 @@ input:focus, textarea:focus, select:focus, button:focus{
     transition: 0.5s;
 }
 
+.headerTitle:hover{
+    cursor: pointer;
+}
+
 .headerItem{
     float: left;
     text-align: center;
@@ -49,6 +53,11 @@ input:focus, textarea:focus, select:focus, button:focus{
     margin-left: 2.5%;
     margin-right: 2.5%;
     border-radius: 10px;
+}
+
+.headerItem:hover{
+    background-color: gray;
+    cursor: pointer;
 }
 
 .logo{
