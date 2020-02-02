@@ -133,6 +133,31 @@ function scrollToElement(pageElement, speed) {
 
 //GET CLOSEST SECTION(ABOUT, FAQ, SPONSORS)
 
+window.onscroll = function(){
+    switch(closest()){
+        case document.getElementById("AboutUsSection"):
+            removeAll();
+            aboutUs.classList.add("headerTitleSelected");
+            break;
+        case document.getElementById("FAQSection"):
+            removeAll();
+            faq.classList.add("headerTitleSelected");
+            break;
+        case document.getElementById("SponsorsSection"):
+            removeAll();
+            sponsors.classList.add("headerTitleSelected");
+            break;
+        default:
+            removeAll();
+    }
+}
+
+function removeAll(){
+    aboutUs.classList.remove("headerTitleSelected");
+    faq.classList.remove("headerTitleSelected");
+    sponsors.classList.remove("headerTitleSelected");
+}
+
 function closest(){
     var snaps = [logo, document.getElementById("AboutUsSection"), document.getElementById("FAQSection"), document.getElementById("SponsorsSection")]
     var snapvalues = [];
