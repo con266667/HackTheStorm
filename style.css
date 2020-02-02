@@ -197,6 +197,7 @@ body{
     height: 8%;
     margin-left: 35%;
     margin-bottom: 20px;
+    transition: 0.3s;
 }
 
 .dropdown-title{
@@ -209,7 +210,7 @@ body{
     width: 25px;
     margin-top: 3px;
     margin-right: 10px;
-    transition: transform 0.3s;
+    transition: 0.3s;
 }
 
 .dropdown:hover{
