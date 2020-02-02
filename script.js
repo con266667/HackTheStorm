@@ -176,7 +176,6 @@ var faqbutton = document.getElementsByClassName("dropdown");
 
 for(var i = 0; i < faqbutton.length; i++){
     faqbutton[i].addEventListener("click", function(){
-        this.classList.toggle("active");
         var panel = this.nextElementSibling;
         for(var i2 = 0; i2 < faqbutton.length; i2++){
             if(faqbutton[i2].nextElementSibling != panel) {
@@ -184,10 +183,18 @@ for(var i = 0; i < faqbutton.length; i++){
             }
         }
         if (panel.style.maxHeight) {
+            this.childNodes[2].style.transform = "rotate(0deg)";
             panel.style.maxHeight = null;
           } else {
+            this.childNodes[2].style.transform = "rotate(180deg)";
             panel.style.maxHeight = panel.scrollHeight + "px";
         }
+    });
+    faqbutton[i].addEventListener("mouseover", function(){
+        this.childNodes[2].style.filter = "invert(100%)";
+    });
+    faqbutton[i].addEventListener("mouseout", function(){
+        this.childNodes[2].style.filter = null;
     });
 }
 

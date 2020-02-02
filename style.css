@@ -203,6 +203,7 @@ body{
 
 .dropdown{
     font-size: 25;
+    text-align: center;
     border: 3px solid black;
     border-radius: 13px;
     background-color: white;
@@ -211,6 +212,19 @@ body{
     height: 8%;
     margin-left: 35%;
     margin-bottom: 20px;
+}
+
+.dropdown-title{
+    margin-left: 30px;
+}
+
+.arrow{
+    opacity: 0.8;
+    float: right;
+    width: 25px;
+    margin-top: 3px;
+    margin-right: 10px;
+    transition: transform 0.3s;
 }
 
 .dropdown:hover{
