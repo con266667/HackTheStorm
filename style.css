@@ -5,6 +5,10 @@ html{
     color: #2b2d30;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 input:focus, textarea:focus, select:focus, button:focus{
     outline: none;
 }
