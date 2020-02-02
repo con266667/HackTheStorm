@@ -42,7 +42,8 @@ input:focus, textarea:focus, select:focus, button:focus{
     font-size: 30px;
     font-weight: 400;
     transition: 0.5s;
-    border-bottom: 3px solid transparent;
+    border: 3px solid transparent;
+    border-color: transparent;
     margin-top: 30px;
     width: 10%;
     margin-left: 2.5%;

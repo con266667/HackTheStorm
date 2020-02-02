@@ -137,15 +137,15 @@ window.onscroll = function(){
     switch(closest()){
         case document.getElementById("AboutUsSection"):
             removeAll();
-            aboutUs.style.backgroundColor = "grey";
+            aboutUs.style.borderColor = "grey";
             break;
         case document.getElementById("FAQSection"):
             removeAll();
-            faq.style.backgroundColor = "grey";
+            faq.style.borderColor = "grey";
             break;
         case document.getElementById("SponsorsSection"):
             removeAll();
-            sponsors.style.backgroundColor = "grey";
+            sponsors.style.borderColor = "grey";
             break;
         default:
             removeAll();
@@ -153,9 +153,9 @@ window.onscroll = function(){
 }
 
 function removeAll(){
-    aboutUs.style.backgroundColor = "transparent";
-    faq.style.backgroundColor = "transparent";
-    sponsors.style.backgroundColor = "transparent";
+    aboutUs.style.borderColor = "transparent";
+    faq.style.borderColor = "transparent";
+    sponsors.style.borderColor = "transparent";
 }
 
 function closest(){
