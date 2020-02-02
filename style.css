@@ -21,6 +21,7 @@ input:focus, textarea:focus, select:focus, button:focus{
 }
 
 .headerTitle{
+    background-color: transparent;
     float: left;
     text-align: center;
     text-decoration: none;
@@ -31,17 +32,7 @@ input:focus, textarea:focus, select:focus, button:focus{
     padding-left: 25px;
     padding-right: 10%;
     text-align: center;
-}
-
-.headerTitleSelected{
-    background-color: grey;
-    animation-name: headerTitleSelected;
-    animation-duration: 0.5s;
-}
-
-@keyframes headerTitleSelected{
-    from {background-color: white;}
-    to {background-color: grey;}
+    transition: 0.5s;
 }
 
 .headerItem{
@@ -129,21 +120,14 @@ body{
     background-color: gray;
     border: 3px solid black;
     border-radius: 13px;
-    transition: background-color 0.5s;
-    transition: width 1s;
+    transition: 0.3s;
 }
 
 .get-notified:hover{
+    transition: 0.3s, width 1s;
     background-color: black;
     color: white;
-    animation-name: bggraytoblack;
-    animation-duration: 0.5s;
 }
-
-@keyframes bggraytoblack {
-    from {background-color: gray;}
-    to {background-color: black;}
-  }
 
 .home-line{
     float: left;

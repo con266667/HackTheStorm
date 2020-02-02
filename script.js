@@ -137,15 +137,15 @@ window.onscroll = function(){
     switch(closest()){
         case document.getElementById("AboutUsSection"):
             removeAll();
-            aboutUs.classList.add("headerTitleSelected");
+            aboutUs.style.backgroundColor = "grey";
             break;
         case document.getElementById("FAQSection"):
             removeAll();
-            faq.classList.add("headerTitleSelected");
+            faq.style.backgroundColor = "grey";
             break;
         case document.getElementById("SponsorsSection"):
             removeAll();
-            sponsors.classList.add("headerTitleSelected");
+            sponsors.style.backgroundColor = "grey";
             break;
         default:
             removeAll();
@@ -153,9 +153,9 @@ window.onscroll = function(){
 }
 
 function removeAll(){
-    aboutUs.classList.remove("headerTitleSelected");
-    faq.classList.remove("headerTitleSelected");
-    sponsors.classList.remove("headerTitleSelected");
+    aboutUs.style.backgroundColor = "transparent";
+    faq.style.backgroundColor = "transparent";
+    sponsors.style.backgroundColor = "transparent";
 }
 
 function closest(){
