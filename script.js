@@ -238,3 +238,9 @@ function ValidateEmail(mail)
   }
     return false
 }
+
+//Animate On Scroll Lib
+
+AOS.init({
+    duration: 600,
+});
