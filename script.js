@@ -179,6 +179,7 @@ for(var i = 0; i < faqbutton.length; i++){
         var panel = this.nextElementSibling;
         for(var i2 = 0; i2 < faqbutton.length; i2++){
             if(faqbutton[i2].nextElementSibling != panel) {
+                faqbutton[i2].childNodes[2].style.transform = "rotate(0deg)";
                 faqbutton[i2].nextElementSibling.style.maxHeight = null;
             }
         }
