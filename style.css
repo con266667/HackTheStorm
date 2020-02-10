@@ -265,5 +265,80 @@ body{
 
 @media only screen and (max-width: 600px){
     /* Phones */
+    .home-left{
+        width: 100%;
+        height: 100%;
+        margin-top: 80px;
+        float: left;
+        font-size: 28px;
+    }
+
+    .home{
+        margin-left: 0%;
+    }
+
+    .cloud1, .cloud2, .cloud3{
+        display: none;
+    }
+
+    .home-line{
+        width: 150px;
+    }
+
+    .get-notified{
+        float: right;
+        position: absolute;
+        font-weight: bold;
+        width: 75%;
+        right: -14%;
+        background-color: gray;
+        border: 3px solid black;
+        border-radius: 13px;
+        transition: 0.3s;
+    }
+
+    .email{
+        font-size: 15px;
+    }
+
+    .section{
+        margin-left: 10%;
+        min-height: 100%;
+        height: auto;
+        width: 80%;
+    }
+
+    .section-title{
+        margin-left: 10%;
+        font-size: 30px;
+        width: 80%;
+    }
     
+    .section-text{
+        margin-left: 0%;
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .dropdown{
+        font-size: 12;
+        text-align: center;
+        border: 3px solid black;
+        background-color: white;
+        color: black;
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    .arrow{
+        width: 15px;
+        margin-top: 0px;
+        margin-right: 3px;
+    }
+    
+    .dropdown-panel{
+        font-size: 15px;
+        width: 100%;
+        margin-left: 0%;
+    }
 }
