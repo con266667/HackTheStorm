@@ -22,11 +22,13 @@ input:focus, textarea:focus, select:focus, button:focus{
     left: 0;
     top: 0;
     background-color: white;
+    display: flex;
+    flex-direction: row;
 }
 
 .headerTitle{
     background-color: transparent;
-    float: left;
+    white-space: nowrap;
     text-align: center;
     text-decoration: none;
     font-size: 40px;
@@ -37,14 +39,22 @@ input:focus, textarea:focus, select:focus, button:focus{
     padding-right: 10%;
     text-align: center;
     transition: 0.5s;
+    display: flex;
+    width: fit-content;
 }
 
 .headerTitle:hover{
     cursor: pointer;
 }
 
+.headerItems{
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
 .headerItem{
-    float: left;
+    
+    /*float: left;*/
     text-align: center;
     text-decoration: none;
     font-size: 30px;
@@ -54,9 +64,11 @@ input:focus, textarea:focus, select:focus, button:focus{
     border-color: transparent;
     margin-top: 30px;
     width: 10%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
     border-radius: 10px;
+    display: flex;
+    width:fit-content;
+    white-space: nowrap;
+    margin-right: 10px;
 }
 
 .headerItem:hover{
@@ -75,6 +87,7 @@ input:focus, textarea:focus, select:focus, button:focus{
 body{
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    overflow-x: hidden; /*gets rid of horizontal scroll bar*/
     margin-top: 110px;
 }
 
@@ -141,6 +154,7 @@ body{
     transition: 0.3s, width 1s;
     background-color: black;
     color: white;
+    cursor: pointer;
 }
 
 .home-line{
