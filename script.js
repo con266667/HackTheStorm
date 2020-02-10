@@ -118,7 +118,6 @@ function detectmob() {
 }
 
 if(detectmob()){
-    console.log("Mobile");
     body.style.scrollSnapType = "none";
 } else {
     body.style.scrollSnapType = "y mandatory";
@@ -283,7 +282,7 @@ if(hasExpanded){
         mailList.style.marginLeft = "0";
         email.style.opacity = "1";
         getnotified.style.width = "30%";
-        email.style.width = "39%";
+        email.style.width = detectmob()?"43%":"39%";
     }
 }
 
@@ -297,7 +296,8 @@ function ValidateEmail(mail)
 }
 
 //Animate On Scroll Lib
-
+/*
 AOS.init({
     duration: 600,
 });
+*/
