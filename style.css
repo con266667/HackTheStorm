@@ -260,7 +260,64 @@ body{
 
 @media only screen and (max-width: 768px){
     /* Tablets */
+    .home-left{
+        width: 60%;
+    }
+
+    .headerTitle{
+        font-size: 30px;
+        margin-top: 35px;
+    }
+
+    .logo{
+        width: 60px;
+    }
+
+    .headerItem{
+        margin-top: 38px;
+        font-size: 20px;
+        height: 25px;
+    }
+
+    .get-notified{
+        float: right;
+        position: absolute;
+        font-weight: bold;
+        width: 55%;
+        right: 5%;
+        border-radius: 13px;
+        transition: 0.3s;
+        height: 60px;
+    }
+
+    .email{
+        height: 60px;
+    }
+
+    .cloud1, .cloud2, .cloud3{
+        display: none;
+    }
+
+    .section{
+        min-height: 100%;
+        height: auto;
+    }
     
+    .section-text{
+        margin-left: 7.5%;
+        width: 85%;
+    }
+
+    .dropdown{
+        text-align: center;
+        width: 60%;
+        margin-left: 20%;
+    }
+    
+    .dropdown-panel{
+        width: 60%;
+        margin-left: 20%;
+    }
 }
 
 @media only screen and (max-width: 600px){
@@ -291,8 +348,6 @@ body{
         font-weight: bold;
         width: 75%;
         right: -14%;
-        background-color: gray;
-        border: 3px solid black;
         border-radius: 13px;
         transition: 0.3s;
     }
@@ -323,9 +378,6 @@ body{
     .dropdown{
         font-size: 12;
         text-align: center;
-        border: 3px solid black;
-        background-color: white;
-        color: black;
         width: 80%;
         margin-left: 10%;
     }
