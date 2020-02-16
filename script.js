@@ -249,10 +249,11 @@ if(hasExpanded){
 } else {
         getnotified.type="submit";
         hasExpanded = true;
-        mailList.style.marginLeft = "0";
+        email.style.marginLeft = "4.2%";
+        //mailList.style.marginLeft = "0";
         email.style.opacity = "1";
-        getnotified.style.width = "30%";
-        email.style.width = detectmob()?"43%":"39%";
+        getnotified.style.width = "25%";
+        email.style.width = detectmob()?"43%":"41%";
     }
 }
 
