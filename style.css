@@ -53,7 +53,6 @@ input:focus, textarea:focus, select:focus, button:focus{
     flex-grow: 1;
 }
 .headerItem{
-    
     /*float: left;*/
     text-align: center;
     text-decoration: none;

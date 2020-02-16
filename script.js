@@ -236,8 +236,6 @@ if(hasExpanded){
     if(ValidateEmail(email.value)){
     //signup
     console.log(email.value);
-
-
     mailList.style.opacity = "0";
     } else {
         //alert("Invalid Email");
