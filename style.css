@@ -316,6 +316,24 @@ body{
         width: 60%;
         margin-left: 20%;
     }
+    /*Remove Hover*/
+    .headerItem:hover{
+        background-color: transparent;
+    }
+
+    .get-notified:hover{
+        transition: 0.3s, width 1s;
+        background-color: gray;
+        color: black;
+        cursor: pointer;
+    }
+
+    .dropdown:hover{
+        background-color: white;
+        color: black;
+        animation-name: unset;
+        animation-duration: unset;
+    }
 }
 
 @media only screen and (max-width: 600px){

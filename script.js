@@ -217,7 +217,8 @@ for(var i = 0; i < faqbutton.length; i++){
         }
     });
     faqbutton[i].addEventListener("mouseover", function(){
-        this.childNodes[2].style.filter = "invert(100%)";
+        if(!detectmob()){
+        this.childNodes[2].style.filter = "invert(100%)";}
     });
     faqbutton[i].addEventListener("mouseout", function(){
         this.childNodes[2].style.filter = null;
@@ -250,10 +251,9 @@ if(hasExpanded){
         getnotified.type="submit";
         hasExpanded = true;
         email.style.marginLeft = "4.2%";
-        //mailList.style.marginLeft = "0";
         email.style.opacity = "1";
         getnotified.style.width = "25%";
-        email.style.width = detectmob()?"43%":"41%";
+        email.style.width = detectmob()?"47%":"41%";
     }
 }
 
