@@ -115,7 +115,7 @@ input:focus, textarea:focus, select:focus, button:focus{
 .home-left{
     z-index: 2;
     width: 40%;
-    margin-top: 250px;
+    margin-top: 150px;
     margin-left: 10%;
     font-size: 45px;
 }
@@ -202,7 +202,12 @@ input:focus, textarea:focus, select:focus, button:focus{
     margin-right: 5%;
 }
 
-.type-cursor { color:#2b2d30; animation:blink .6s ease infinite;opacity:0; }
+.type-cursor { 
+    color:#2b2d30; 
+    animation:blink .6s ease infinite;
+    opacity:0; 
+}
+
 @keyframes blink {
     100% { opacity:1; }
 }
@@ -211,9 +216,11 @@ input:focus, textarea:focus, select:focus, button:focus{
     height: 100%;
 }
 
+/* Scroll Snapping Safari
 .scroll-snap{
-    scroll-snap-align: start;
+    scroll-snap-align: end;
 }
+*/
 
 .section-title{
     font-size: 50px;

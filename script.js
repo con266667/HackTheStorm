@@ -160,33 +160,34 @@ menuButton.onclick = function(){
 }
 
 function scrollToElement(pageElement, speed) { 
+        var offset = (pageElement == document.getElementById("AboutUsSection"))?150:200;
         isAutoScrolling = true;   
         var i = window.scrollY;
         function loop(){
             
             setTimeout(function(){
-                if(i < pageElement.offsetTop-200){
+                if(i < pageElement.offsetTop-offset){
                     window.scroll(0, i);
                     i=i+speed;
-                    if(i < pageElement.offsetTop-200){
+                    if(i < pageElement.offsetTop-offset){
                         loop();
                     } else {
                         if(detectmob() != true){
                             document.getElementsByTagName("body")[0].style.scrollSnapType = "y mandatory";
                         }
-                        window.scroll(0, pageElement.offsetTop-200);
+                        window.scroll(0, pageElement.offsetTop-offset);
                         isAutoScrolling = false;
                     }
-                } else if(i > pageElement.offsetTop-200){
+                } else if(i > pageElement.offsetTop-offset){
                     window.scroll(0, i);
                     i=i-speed;
-                    if(i > pageElement.offsetTop-200){
+                    if(i > pageElement.offsetTop-offset){
                         loop();
                     } else {
                         if(detectmob() != true){
                             document.getElementsByTagName("body")[0].style.scrollSnapType = "y mandatory";
                         }
-                        window.scroll(0, pageElement.offsetTop-200);
+                        window.scroll(0, pageElement.offsetTop-offset);
                         isAutoScrolling = false;
                     }
                 }
