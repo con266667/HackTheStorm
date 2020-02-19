@@ -68,6 +68,13 @@ var contact = document.getElementById("Contact");
 var hackthestorm = document.getElementById("HackTheStorm");
 var logo = document.getElementById("Logo");
 
+var aboutUsMob = document.getElementById("AboutUsMob");
+var faqMob = document.getElementById("FAQMob");
+var sponsorsMob = document.getElementById("SponsorsMob");
+var contactMob = document.getElementById("Contact");
+var menuButton = document.getElementById("menuButton");
+var menu = document.getElementById("navMenu");
+
 //RESPONSIVE
 
 function detectmob() { 
@@ -110,12 +117,39 @@ contact.onclick = function(){
     window.location.href = "mailto:info@hackthestorm.com"
 }
 
+aboutUsMob.onclick = function(){
+    scrollToElement(document.getElementById("AboutUsSection"), 20);
+}
+
+faqMob.onclick = function(){
+    scrollToElement(document.getElementById("FAQSection"), 20);
+}
+
+sponsorsMob.onclick = function(){
+    scrollToElement(document.getElementById("SponsorsSection"), 20);
+}
+
+contactMob.onclick = function(){
+    window.location.href = "mailto:info@hackthestorm.com"
+}
+
 hackthestorm.onclick = function(){
     scrollToElement(logo, 20);
 }
 
 logo.onclick = function(){
     scrollToElement(logo, 20);
+}
+
+var menuOpen = false;
+menuButton.onclick = function(){
+    if(!menuOpen){
+        menu.classList.add("nav-open");
+        menuOpen = true;
+    } else {
+        menu.classList.remove("nav-open");
+        menuOpen = false;
+    }
 }
 
 function scrollToElement(pageElement, speed) { 

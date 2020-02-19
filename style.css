@@ -52,6 +52,23 @@ input:focus, textarea:focus, select:focus, button:focus{
     justify-content: space-evenly;
     flex-grow: 1;
 }
+
+.nav-menu{
+    display: block;
+    position: fixed;
+    background-color: white;
+    top: 100px;
+    left: 100%;
+    width: 40%;
+    height: 100%;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.nav-open{
+    left: 60%;
+}
+
 .headerItem{
     /*float: left;*/
     text-align: center;
@@ -73,6 +90,10 @@ input:focus, textarea:focus, select:focus, button:focus{
 .headerItem:hover{
     background-color: gray;
     cursor: pointer;
+}
+
+.menu-button{
+    display: none;
 }
 
 .logo{
@@ -346,8 +367,44 @@ body{
         font-size: 28px;
     }
 
+    .headerTitle{
+        font-size: 25px;
+        padding-left: 10px;
+    }
+
     .home{
         margin-left: 0%;
+    }
+
+    .menu-button{
+        display: block;
+        position: absolute;
+        right: 50;
+        height: 40px;
+        width: 40px;
+        margin-top: 30px;
+    }
+
+    .menu-button-div{
+        float: right;
+    }
+
+    .nav-menu{
+        display: block;
+        position: fixed;
+        background-color: white;
+        top: 100px;
+        right: -10px;
+    }
+
+    
+
+    .navItem{
+        margin-left: 25px;
+    }
+
+    .headerItems{
+        display: none;
     }
 
     .cloud1, .cloud2, .cloud3{
