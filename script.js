@@ -119,19 +119,23 @@ contact.onclick = function(){
 }
 
 aboutUsMob.onclick = function(){
-    scrollToElement(document.getElementById("AboutUsSection"), 20);
+    scrollToElement(document.getElementById("AboutUsSection"), 15);
 }
 
 faqMob.onclick = function(){
-    scrollToElement(document.getElementById("FAQSection"), 20);
+    scrollToElement(document.getElementById("FAQSection"), 15);
 }
 
 sponsorsMob.onclick = function(){
-    scrollToElement(document.getElementById("SponsorsSection"), 20);
+    scrollToElement(document.getElementById("SponsorsSection"), 15);
 }
 
 contactMob.onclick = function(){
     window.location.href = "mailto:info@hackthestorm.com"
+}
+
+home.onclick = function(){
+    scrollToElement(logo, 15);
 }
 
 hackthestorm.onclick = function(){
@@ -142,9 +146,7 @@ logo.onclick = function(){
     scrollToElement(logo, 20);
 }
 
-home.onclick = function(){
-    scrollToElement(logo, 20);
-}
+
 
 var menuOpen = false;
 menuButton.onclick = function(){
