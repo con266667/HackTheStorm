@@ -68,6 +68,7 @@ var contact = document.getElementById("Contact");
 var hackthestorm = document.getElementById("HackTheStorm");
 var logo = document.getElementById("Logo");
 
+var home = document.getElementById("homeMob");
 var aboutUsMob = document.getElementById("AboutUsMob");
 var faqMob = document.getElementById("FAQMob");
 var sponsorsMob = document.getElementById("SponsorsMob");
@@ -138,6 +139,10 @@ hackthestorm.onclick = function(){
 }
 
 logo.onclick = function(){
+    scrollToElement(logo, 20);
+}
+
+home.onclick = function(){
     scrollToElement(logo, 20);
 }
 
