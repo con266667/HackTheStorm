@@ -146,15 +146,15 @@ logo.onclick = function(){
     scrollToElement(logo, 20);
 }
 
-
-
 var menuOpen = false;
 menuButton.onclick = function(){
     if(!menuOpen){
+        menuButton.style.transform = "rotate(90deg)";
         menu.classList.add("nav-open");
         menuOpen = true;
     } else {
-        menu.classList.remove("nav-open");
+        menu.classList.remove("nav-open")
+        menuButton.style.transform = "none";
         menuOpen = false;
     }
 }
