@@ -1,7 +1,7 @@
 html{
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
-    background-color: #0D0E22;
+    background-color: rgb(19, 20, 39);
     color: #2b2d30;
     overflow-x: hidden;
 }
@@ -18,7 +18,7 @@ input:focus, textarea:focus, select:focus, button:focus{
 }
 
 .header{
-    height: 100px;
+    height: 70px;
     width: 100%;
     z-index: 1;
     position: fixed;
@@ -34,16 +34,15 @@ input:focus, textarea:focus, select:focus, button:focus{
     white-space: nowrap;
     text-align: center;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 35px;
     transition: 0.5s;
-    border-bottom: 3px solid transparent;
-    margin-top: 25px;
     padding-left: 25px;
     padding-right: 10%;
     text-align: center;
     transition: 0.5s;
     display: flex;
     width: fit-content;
+    align-items: center;
 }
 
 .headerTitle:hover{
@@ -54,6 +53,8 @@ input:focus, textarea:focus, select:focus, button:focus{
     display: flex;
     justify-content: space-evenly;
     flex-grow: 1;
+    height: 100%;
+    align-items: center;
 }
 
 .nav-menu{
@@ -76,12 +77,11 @@ input:focus, textarea:focus, select:focus, button:focus{
     /*float: left;*/
     text-align: center;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 400;
     transition: 0.5s;
     border: 3px solid transparent;
     border-color: transparent;
-    margin-top: 30px;
     width: 10%;
     border-radius: 10px;
     display: flex;
@@ -99,16 +99,22 @@ input:focus, textarea:focus, select:focus, button:focus{
     display: none;
 }
 
+
+.logo-div{
+    height: 100%;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .logo{
-    margin-top: 5px;
-    margin-left: 5px;
-    float: left;
-    width: 90px;
-    height: 90px;
+    width: 50px;
+    height: 50px;
 }
 
 .home{
     height: 75%;
+    color: rgb(230, 230, 230);
 }
 
 .home-left{
@@ -175,7 +181,7 @@ input:focus, textarea:focus, select:focus, button:focus{
 .home-line{
     float: left;
     width: 350px;
-    border: 3px solid #2b2d30;
+    border: 3px solid #ffffff;
 }
 
 .cloud1{
