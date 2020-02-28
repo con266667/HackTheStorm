@@ -514,7 +514,6 @@ input:focus, textarea:focus, select:focus, button:focus{
   
   cursor: pointer;
   opacity: 0%;
-  visibility: hidden;
   z-index: 2; 
   
   -webkit-touch-callout: none;
