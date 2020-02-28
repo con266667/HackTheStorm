@@ -149,10 +149,15 @@ logo.onclick = function(){
 var menuOpen = false;
 menuButton.onclick = function(){
     if(!menuOpen){
-        menuButton.style.transform = "rotate(90deg)";
+        menuButton.childNodes[1].style.transform = "rotate(42deg) translate(-1px, -1px)";
+        menuButton.childNodes[3].style.opacity = "0";
+        menuButton.childNodes[5].style.transform = "rotate(-42deg) translate(-1px, -1px)";
         menu.classList.add("nav-open");
         menuOpen = true;
     } else {
+        menuButton.childNodes[1].style.transform = "rotate(0deg)";
+        menuButton.childNodes[3].style.opacity = "1";
+        menuButton.childNodes[5].style.transform = "rotate(0deg)";
         menu.classList.remove("nav-open")
         menuButton.style.transform = "none";
         menuOpen = false;
