@@ -391,7 +391,7 @@ input:focus, textarea:focus, select:focus, button:focus{
         display: block;
         position: absolute;
         right: 20;
-        margin-top: 19.5px;
+        margin-top: 17px;
         transition: 0.3s ease-in-out;
     }
 
