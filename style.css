@@ -378,7 +378,9 @@ input:focus, textarea:focus, select:focus, button:focus{
 
     .headerTitle{
         font-size: 25px;
-        padding-left: 10px;
+        margin-bottom: 35;
+        padding-left: 15px;
+        align-items: center;
     }
 
     .home{
@@ -388,10 +390,8 @@ input:focus, textarea:focus, select:focus, button:focus{
     .menu-button{
         display: block;
         position: absolute;
-        right: 30;
-        height: 40px;
-        width: 40px;
-        margin-top: 35px;
+        right: 20;
+        margin-top: 19.5px;
         transition: 0.3s ease-in-out;
     }
 
@@ -399,7 +399,7 @@ input:focus, textarea:focus, select:focus, button:focus{
         display: block;
         position: fixed;
         background-color: #F5F5F5;
-        top: 100px;
+        top: 69px;
         right: -10px;
     }
 
@@ -481,7 +481,8 @@ input:focus, textarea:focus, select:focus, button:focus{
     position: relative;
     
     background: black;
-    border-radius: 3px;
+    border-radius: 5px;
+    border: 0.5px solid black;
     
     z-index: 1;
     

@@ -149,9 +149,9 @@ logo.onclick = function(){
 var menuOpen = false;
 menuButton.onclick = function(){
     if(!menuOpen){
-        menuButton.childNodes[1].style.transform = "rotate(42deg) translate(-1px, -1px)";
+        menuButton.childNodes[1].style.transform = "rotate(44deg) translate(-1px, -1px)";
         menuButton.childNodes[3].style.opacity = "0";
-        menuButton.childNodes[5].style.transform = "rotate(-42deg) translate(-1px, -1px)";
+        menuButton.childNodes[5].style.transform = "rotate(-44deg) translate(-1px, -1px)";
         menu.classList.add("nav-open");
         menuOpen = true;
     } else {
